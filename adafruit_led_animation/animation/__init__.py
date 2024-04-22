@@ -116,7 +116,7 @@ class Animation:
         """
         Displays the updated pixels.  Called during animates with changes.
         """
-        self.pixel_object.show()
+        self.pixel_object.write()
 
     @property
     def peers(self):
@@ -154,7 +154,7 @@ class Animation:
         Fills the pixel object with a color.
         """
         self.pixel_object.fill(color)
-        self.pixel_object.show()
+        self.pixel_object.write()
 
     @property
     def color(self):
